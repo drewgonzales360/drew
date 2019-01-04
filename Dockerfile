@@ -2,8 +2,9 @@ FROM ubuntu:18.04
 
 
 RUN apt-get update && \
-apt-get install -y zsh curl git wget sudo && \
-useradd -ms /bin/zsh drew
+apt-get install -y zsh curl git wget sudo iputils-ping && \
+useradd -ms /bin/zsh drew && \
+echo "drew ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 USER drew
 

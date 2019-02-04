@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: daroo
+      imagePullPolicy: Always
       image: drewgonzales360/drew
       command: [ "/bin/bash", "-c", "--" ]
       args: [ "while true; do sleep 30; done;" ]
-

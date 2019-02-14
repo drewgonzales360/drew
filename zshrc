@@ -6,9 +6,12 @@ export ZSH=/home/drew/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-# ZSH_THEME="bullet-train"
-ZSH_THEME=robbyrussell
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Theme
+ZSH_THEME="bullet-train"
+BULLETTRAIN_TIME_BG="green"
+BULLETTRAIN_DIR_BG="green"
+BULLETTRAIN_TIME_FG="black"
+BULLETTRAIN_DIR_FG="black"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random

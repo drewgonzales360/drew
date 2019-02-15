@@ -11,6 +11,7 @@ apt-get install -y \
   sudo         \
   iputils-ping \
   telnet       \
+  net-tools    \
   dnsutils  && \
 useradd -ms /bin/zsh drew && \
 echo "drew ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers

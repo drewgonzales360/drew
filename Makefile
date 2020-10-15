@@ -15,3 +15,4 @@ push:
 	@docker tag drewgonzales360/drew:latest "drewgonzales360/drew:${VERSION}"
 	@echo "Pushing "drewgonzales360/drew:${VERSION}" to hub.docker.com"
 	@docker push "drewgonzales360/drew:${VERSION}"
+	@docker push "drewgonzales360/drew:latest"

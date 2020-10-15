@@ -63,7 +63,7 @@ BULLETTRAIN_DIR_FG="black"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  # git turning this off because fonts are going to be in the container
+  git
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -82,7 +82,7 @@ BULLETTRAIN_PROMPT_ORDER=(
     # aws
     # go
     # elixir
-    git
+    # git
     # hg
     cmd_exec_time
   )

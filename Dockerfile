@@ -1,8 +1,8 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 
 RUN apt-get update && \
-apt-get install -y \
+DEBIAN_FRONTEND=noninteractive apt-get install -y \
   zsh          \
   vim          \
   curl         \
@@ -12,9 +12,10 @@ apt-get install -y \
   iputils-ping \
   telnet       \
   net-tools    \
+  unzip        \
   dnsutils  && \
-useradd -ms /bin/zsh drew && \
-echo "drew ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+  useradd -ms /bin/zsh drew && \
+  echo "drew ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 USER drew
 ENV ZSH_CUSTOM=/home/drew/.oh-my-zsh/custom
